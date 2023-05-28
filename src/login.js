@@ -1,3 +1,5 @@
+
+
 const USERNAME_KEY = "username";
 const HIDDEN_CLASSNAME = "hidden";
 
@@ -10,7 +12,13 @@ function onLoginSubmit(event) {
   // TODO: username길이가 0일경우 초기화 할 수 있도록~
   localStorage.setItem(USERNAME_KEY, username);
   updateLoginFormUI(true);
+  updateLoggedInUI(username);
+}
+
+function updateLoggedInUI(username) {
   updateGreetingMessages(username);
+  // loadSavedTodosAndDisplay();
+  showTodoInputIfPossible();
 }
 
 function updateGreetingMessages(username) {
@@ -34,7 +42,7 @@ function loadUserNameAndDisplay() {
     loginInput.placeholder = 'Please enter your name 😃';
     loginForm.addEventListener("submit", onLoginSubmit);
   } else {
-    updateGreetingMessages(localSavedUserName);
+    updateLoggedInUI(localSavedUserName);
   }
 }
 
