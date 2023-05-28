@@ -31,3 +31,46 @@ body {
     width: 100%; /* needs to be defined to keep the default block behavior */
     margin: 0; /* again, for perfect center */
 }
+
+.hidden {
+    display: none;
+}
+
+.greeting-text {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding-top: 5px;
+    border: none;
+    font-size: 5vh;
+    font-weight: 200;
+    background: none;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    top: 60%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+}
+
+.login-input {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding-top: 5px;
+    border: none;
+    font-size: 5vh;
+    font-weight: 200;
+    background: none;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    top: 60%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+  }
+  
+  ::placeholder {
+    color: black;
+    opacity: 1;
+  }
