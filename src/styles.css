@@ -1,3 +1,23 @@
 body {
     background-size: cover;
 }
+
+.city-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.weather-icon {
+    flex-basis: 3%;
+}
+
+.weather-degree {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.weather-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
